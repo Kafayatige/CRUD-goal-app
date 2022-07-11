@@ -12,12 +12,12 @@
     <div class="container mt-4">
         <h1 class="display-4 text-center text">
             </i>My
-            <span class="text-primary"> SMART GOALS
+            <span class="text-primary rounded-pill bg-info"> SMART GOALS
                  <i class="fa-solid fa-bullseye"></i>
                 </span>
             2022
         </h1>
-        <form id="goal-details">
+        <form id="goal-details" class="d-grid gap-2">
             <div class="form-group">
                 <label for="Title">Goal Title</label>
                 <input type="text" id="title" 
@@ -35,31 +35,45 @@
             <div class="form-group">
                 <label for="Routine" class="form-label mt-4"> What are habits you can develop to achieve your goal?</label>
                 <textarea class="form-control"
-                 id="goalRoutine" rows="3" style="height: 89px;"></textarea>
+                 id="goalRoutine" rows="33" style="height: 89px;"></textarea>
             </div>
 
-            <input type="submit" class="btn btn-primary btn-block">
+            <div class="form-group btn-group mx-5" role="group" >
+                <div class="w-50">
+                    <label for="time">Start Time:</label>
+                    <input type="date" id="start-time" 
+                    class="form-control btn-success w-50">
+                </div>
+                
+                <div class="w-50">
+                     <label for="time">End Time:</label>
+                     <input type="date" id="end-time" 
+                    class="form-control btn-danger w-50">
+                </div>
+            </div>
+
+                <br>
+            <input type="submit" value="Create goal" class="btn btn-primary btn-lg">
         </form>
 
-        <table class="table table-striped">
-            <thead>
-                <tr>
-                    <th>Goal Title</th>
-                </tr>
-            </thead>
-        </table>
-        <table class="table table-striped">
+    
+        <table class="table table-striped mt-5">
             <thead>
                 <tr>
                     <th>Goal Title</th>
                     <th>Goal Term</th>
                     <th>Goal Routine</th>
+                    <th></th>
 
                 </tr>
             </thead>
+            <tbody id="Goal-details"></tbody>
+
+
         </table>
         
 
     </div>
+    <script src="app.js"></script>
 </body>
 </html>

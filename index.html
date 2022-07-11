@@ -17,39 +17,31 @@
                 </span>
             2022
         </h1>
-        <form id="goal-details" class="d-grid gap-2">
+        <form id="fill-goals" class="d-grid gap-2">
             <div class="form-group">
-                <label for="Title">Goal Title</label>
+                <label for="Title">Title</label>
                 <input type="text" id="title" 
                 class="form-control" 
                 placeholder="Give a title to your goal e.g Get a tech job">
             </div>
 
             <div class="form-group">
-                <label for="Term">Goal Term</label>
-                <input type="text" id="Term" 
+                <label for="Term">Term</label>
+                <input type="text" id="term" 
                 class="form-control" 
                 placeholder="Describe if your goal is Long term or Short term">
             </div>
 
             <div class="form-group">
-                <label for="Routine" class="form-label mt-4"> What are habits you can develop to achieve your goal?</label>
+                <label for="habits" class="form-label mt-4"> What are habits you can develop to achieve your goal?</label>
                 <textarea class="form-control"
-                 id="goalRoutine" rows="33" style="height: 89px;"></textarea>
+                 id="habits" rows="33" style="height: 89px;"></textarea>
             </div>
 
-            <div class="form-group btn-group mx-5" role="group" >
-                <div class="w-50">
-                    <label for="time">Start Time:</label>
-                    <input type="date" id="start-time" 
+            <div class="form-group w-75 mt-2" role="group" >
+                    <label for="time">Start Date:</label>
+                    <input type="date" id="start" 
                     class="form-control btn-success w-50">
-                </div>
-                
-                <div class="w-50">
-                     <label for="time">End Time:</label>
-                     <input type="date" id="end-time" 
-                    class="form-control btn-danger w-50">
-                </div>
             </div>
 
                 <br>
@@ -62,12 +54,13 @@
                 <tr>
                     <th>Goal Title</th>
                     <th>Goal Term</th>
-                    <th>Goal Routine</th>
+                    <th>Goal Habits</th>
+                    <th>Start Date</th>
                     <th></th>
 
                 </tr>
             </thead>
-            <tbody id="Goal-details"></tbody>
+            <tbody id="goal-details"></tbody>
 
 
         </table>
